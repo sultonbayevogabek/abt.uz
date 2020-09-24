@@ -1,0 +1,1352 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+/******************************************* - main colors for our project - *******************************************/
+$color-red: #FF8F5E;
+$color-blue: #15D1C2;
+$color-dark-blue: #2196F3;
+$color-black: #252525;
+$color-yellow: #FFCA2B;
+$color-light-green: #8BC34A;
+$color-muted: #C9C9C9;
+/******************************************* - add .svg icons to project - *********************************************/
+@mixin mask($adress) {
+  mask-image: url($adress);
+  -webkit-mask-image: url($adress);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  mask-size: 100%;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-size: 100%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  background-color: #fff;
+
+  &.icon-log-in {
+    @include mask("/icon/log-in.svg")
+  }
+
+  &.icon-biology {
+    @include mask("/icon/biology.svg")
+  }
+
+  &.icon-bookwithpen {
+    @include mask("/icon/bookwithpen.svg")
+  }
+
+  &.icon-chemistry {
+    @include mask("/icon/chemistry.svg")
+  }
+
+  &.icon-computer {
+    @include mask("/icon/computer.svg")
+  }
+
+  &.icon-deutchland {
+    @include mask("/icon/deutchland.svg")
+  }
+
+  &.icon-english {
+    @include mask("/icon/english.svg")
+  }
+
+  &.icon-email {
+    @include mask("/icon/email.svg")
+  }
+
+  &.icon-france {
+    @include mask("/icon/france.svg")
+  }
+
+  &.icon-geography {
+    @include mask("/icon/geography.svg")
+  }
+
+  &.icon-history {
+    @include mask("/icon/history.svg")
+  }
+
+  &.icon-informatics {
+    @include mask("/icon/informatics.svg")
+  }
+
+  &.icon-math {
+    @include mask("/icon/math.svg")
+  }
+
+  &.icon-physics {
+    @include mask("/icon/physics.svg")
+  }
+
+  &.icon-russian {
+    @include mask("/icon/russian.svg")
+  }
+
+  &.icon-send {
+    @include mask("/icon/send.svg")
+  }
+
+  &.icon-literature {
+    @include mask("/icon/literature.svg")
+  }
+
+  &.icon-angle-right {
+    @include mask("/icon/angle-right.svg")
+  }
+
+  &.icon-angle-left {
+    @include mask("/icon/angle-left.svg")
+  }
+
+  &.icon-clock {
+    @include mask("/icon/clock.svg")
+  }
+
+  /********************************************** - colors for icons - *************************************************/
+  &.icon-black {
+    background: #000000;
+  }
+
+  &.icon-muted {
+    background-color: $color-muted;
+  }
+
+  &.icon-blue {
+    background-color: #00BCD4;
+  }
+
+  &.icon-table {
+    background-color: #119A8D;
+  }
+}
+
+/***************************************** - start css styles for project - ********************************************/
+* {
+  font-family: sfui-bold, Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  padding: 10px 15px;
+
+  .collapse {
+    .navbar-nav {
+      .nav-item {
+        margin-right: 8px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .nav-link {
+          color: #000;
+          font-weight: 400;
+          font-size: 18px;
+          padding: 10px 15px !important;
+
+          &:hover, &:focus {
+            background-color: $color-blue;
+            color: #fff;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+
+            .icon {
+              background-color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.header {
+  background-color: $color-red;
+  color: #fff;
+  height: 100%;
+  padding: 56px 0 40px;
+
+  h1 {
+    font: {
+      weight: 700;
+      size: 36px;
+    }
+  }
+
+  h3 {
+    font: {
+      size: 24px;
+      weight: 500;
+    }
+  }
+
+  h4 {
+    font: {
+      size: 18px;
+      weight: 500;
+    }
+  }
+
+  p a {
+    font: {
+      size: 20px;
+      weight: 400;
+    }
+    background-color: $color-blue !important;
+    border: 2px solid #fff;
+    padding: 16px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+
+    &:hover {
+      -webkit-transform: scale(1.12);
+      transform: scale(1.12);
+    }
+  }
+}
+
+.cards {
+  padding: 30px 0 50px;
+  background: url("http://static.abt.uz/assets/4442aece/img/furley_bg_@2X.png");
+
+  .container {
+
+    h1 {
+      margin-bottom: 30px;
+      font: {
+        size: 30px;
+        weight: 700;
+      }
+    }
+
+    .row {
+      .col-md-4 {
+        .card {
+          height: 100%;
+          overflow: hidden;
+          -webkit-box-shadow: 0 0 5px darkgray;
+          box-shadow: 0 0 5px darkgray;
+
+          &:hover {
+            .card-header div:nth-child(2) {
+              -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+            }
+          }
+
+          .card-header {
+            width: 150%;
+            -webkit-border-radius: 0 0 50% 50%;
+            border-radius: 0 0 50% 50%;
+            margin-left: -26%;
+            padding: 40px 0 20px;
+            background-color: #00BCD4;
+            color: #fff;
+
+            h3 {
+              font: {
+                size: 24px;
+                weight: 500;
+              };
+            }
+
+            div:nth-child(2) {
+              width: 75px;
+              height: 75px;
+              background-color: #fff;
+              -webkit-border-radius: 50%;
+              border-radius: 50%;
+              -webkit-transition-duration: 0.5s;
+              transition-duration: 0.5s;
+
+              .icon {
+                width: 55px;
+                height: 55px;
+              }
+            }
+          }
+
+          .card-body {
+            padding: 25px 24px 50px;
+          }
+
+          .card-footer {
+            background-color: $color-blue;
+            padding: 20px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+
+            a {
+              text-decoration: none;
+              font: {
+                size: 20px;
+                weight: 400;
+              }
+            }
+          ;
+
+            &:hover {
+              background-color: #008A9C;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.admission {
+  background-image: url("http://static.abt.uz/assets/4442aece/img/black_linen_v2_@2X.png");
+  height: 100%;
+  padding: 50px 0 30px;
+
+  p {
+    font: {
+      weight: 400;
+      size: 18px;
+    }
+    line-height: 26px;
+  }
+
+  a {
+    background-color: $color-blue;
+    font: {
+      size: 20px;
+      weight: 400;
+    }
+    padding: 5px 20px;
+  }
+}
+
+.subjects {
+  background: {
+    image: url("http://static.abt.uz/assets/4442aece/img/furley_bg_@2X.png");
+    size: 100%;
+  }
+
+  .icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  div.container {
+    h2:first-child {
+      font: {
+        size: 30px;
+        weight: 700;
+      };
+    }
+
+    div.row {
+      a {
+        text-decoration: none;
+        color: #fff;
+        font: {
+          weight: 400;
+          size: 18px;
+        }
+      }
+
+      div.d-flex {
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        position: relative;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+
+        &:hover {
+          -webkit-transform: scale(1.12);
+          transform: scale(1.12);
+          z-index: 2;
+        }
+      }
+
+      .col-md-6, .col-md-12 {
+        padding: 0.25rem;
+      }
+
+      .col-md-6 {
+        div {
+          height: 170px;
+        }
+      }
+
+      .col-lg-4 {
+        &:first-child {
+          .row {
+            .col-md-12 {
+              div {
+                background-color: $color-dark-blue;
+                height: 348px;
+              }
+            }
+
+            .col-md-6 {
+              &:nth-child(2) {
+                div {
+                  background: $color-light-green;
+                }
+              }
+
+              &:nth-child(3) {
+                div {
+                  background: $color-blue;
+                }
+              }
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          .row {
+            .col-md-6 {
+              div:first-child {
+              }
+
+              &:first-child {
+                div {
+                  background: $color-light-green;
+                }
+              }
+
+              &:nth-child(2), &:last-child {
+                div {
+                  background: $color-dark-blue;
+                }
+              }
+
+              &:nth-child(3) {
+                div {
+                  background: $color-yellow;
+                }
+              }
+
+              &:nth-child(4), &:nth-child(5) {
+                div {
+                  background: $color-red;
+                }
+              }
+            }
+          }
+        }
+
+        &:last-child {
+          .row {
+            .col-md-12 {
+              div:first-child {
+                height: 170px;
+              }
+
+              &:first-child {
+                div {
+                  background: $color-red;
+                }
+              }
+
+              &:nth-child(2) {
+                div {
+                  background: $color-yellow;
+                }
+              }
+
+              &:last-child {
+                div {
+                  background: $color-light-green;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background: #2E2E2E;
+
+  a {
+    color: $color-muted;
+    font: {
+      size: 18px;
+      weight: 400;
+    }
+
+    &:hover {
+      color: #7A7A7A;
+    }
+  }
+
+  .row:nth-child(2) {
+    &::before {
+      content: "";
+      width: 100%;
+      height: .7px;
+      background-color: #383838;
+    }
+
+    .col-md-8, .col-md-4 {
+      margin-top: 20px;
+
+      p {
+        color: $color-muted;
+        font-size: 14px;
+        font-weight: 400;
+
+        a {
+          font-size: 14px;
+        }
+      }
+    ;
+    }
+  }
+}
+
+.login {
+  background: url("https://static.abt.uz/assets/4442aece/img/furley_bg_@2X.png");
+
+  .container {
+    .row {
+      .col-md-4 {
+        .card {
+          border: none;
+          -webkit-box-shadow: 0 0 5px lightgray;
+          box-shadow: 0 0 5px lightgray;
+
+          &:first-child {
+            .card-body {
+              padding: 40px 25px 20px;
+
+              .was-validated {
+                label {
+                  margin: 0;
+                  font: {
+                    size: 14px;
+                    weight: 700;
+                  };
+                }
+
+                input[type=text], input[type=password] {
+                  height: 50px;
+                  background-image: none;
+                  border-color: #A94442;
+                  font-size: 20px;
+                }
+
+                .form-control:valid {
+                  border-color: $color-blue;
+                  -webkit-box-shadow: 0 0 3px $color-blue;
+                  box-shadow: 0 0 3px $color-blue;
+                }
+
+                .form-control:invalid {
+                  border-color: #A94442;
+                  -webkit-box-shadow: 0 0 3px #A94442;
+                  box-shadow: 0 0 3px #A94442;
+                }
+
+                .invalid-feedback {
+                  color: #A94442;
+                  font-size: 14px;
+                  margin-top: 0;
+                  text-align: right;
+                }
+
+                .input-group {
+                  .input-group-prepend {
+                    .input-group-text {
+                      font-size: 20px;
+                      color: #A94442;
+                      border-color: #A94442;
+                      -webkit-box-shadow: 0 0 3px #A94442;
+                      box-shadow: 0 0 3px #A94442;
+                      background-color: rgba(169, 68, 66, 0.2);
+                    }
+                  }
+                }
+
+                button:last-child {
+                  background-color: $color-blue;
+                  border: none;
+                  -webkit-box-shadow: none;
+                  box-shadow: none;
+                  float: right;
+                  margin-top: 0;
+                  font-size: 20px;
+                  padding: 10px 20px;
+
+                  &:hover {
+                    background: #12B9AC;
+                  }
+
+                  &:focus {
+                    background: #286090;
+                  }
+                }
+              }
+            }
+          }
+
+          &:last-child {
+            .card-body {
+              text-align: center;
+              padding: 25px;
+
+              p {
+                font-size: 14px;
+              }
+
+              a {
+                background-color: $color-blue;
+                color: #fff;
+                font-size: 20px;
+                padding: 10px 20px;
+                margin-top: 10px;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+
+                &:hover {
+                  background: #12B9AC;
+                }
+
+                &:focus {
+                  background: #286090;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.universities {
+  background: url("http://static.abt.uz/assets/4442aece/img/furley_bg_@2X.png");
+  padding: 35px 0 50px;
+  -webkit-box-shadow: 0 0 20px lightgray inset;
+  box-shadow: 0 0 20px lightgray inset;
+
+  .container {
+    .row {
+      .col-md-8 {
+        input:first-child {
+          border: 0.5px solid #CCCCCC;
+          -webkit-box-shadow: 0 0 3px darkgray;
+          box-shadow: 0 0 3px darkgray;
+          font-size: 20px;
+
+          &::-webkit-input-placeholder {
+            font-size: 20px;
+            color: #999;
+          }
+
+          &::-moz-placeholder {
+            font-size: 20px;
+            color: #999;
+          }
+
+          &:-ms-input-placeholder {
+            font-size: 20px;
+            color: #999;
+          }
+
+          &::-ms-input-placeholder {
+            font-size: 20px;
+            color: #999;
+          }
+
+          &::placeholder {
+            font-size: 20px;
+            color: #999;
+          }
+
+          &:focus {
+            border-color: #66AFE9;
+            -webkit-box-shadow: 0 0 5px #66AFE9;
+            box-shadow: 0 0 5px #66AFE9;
+          }
+        }
+
+        .list-group {
+          -webkit-box-shadow: 0 0 3px lightgray;
+          box-shadow: 0 0 3px lightgray;
+
+          .list-group-item {
+            &:first-child {
+              padding: 22px 0;
+            }
+
+            &:nth-child(even) {
+              background: #F9F9F9;
+            }
+
+            &:nth-child(n+2):hover {
+              background-color: $color-blue;
+
+              a, p {
+                color: #fff;
+              }
+            }
+
+            border-left: none;
+            border-right: none;
+
+            a {
+              font-weight: 700;
+              color: #119A8D;
+            }
+
+            p {
+              color: #616161;
+              margin: 0;
+            }
+          }
+        }
+      }
+
+      .col-md-4 {
+        * {
+          color: #363636;
+        }
+
+        .card {
+          -webkit-box-shadow: 0 0 3px lightgray;
+          box-shadow: 0 0 3px lightgray;
+          -webkit-border-radius: 5px;
+          border-radius: 5px;
+
+          &:first-child {
+            .card-body {
+              padding: 20px 25px;
+              font-size: 14px;
+            }
+          }
+
+          &:nth-child(2) {
+            height: 45px;
+          }
+
+          &:last-child {
+            position: -webkit-sticky;
+            position: sticky;
+            top: -75px;
+
+            .card-body {
+              padding: 40px 25px 20px;
+
+              a {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: flex;
+                line-height: 20px;
+                font: {
+                  size: 18px;
+                  weight: 500;
+                }
+
+                img {
+                  height: 100%;
+                }
+              ;
+
+                p {
+                  margin: 0 0 0 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.sign-up {
+  background: url("https://static.abt.uz/assets/4442aece/img/furley_bg_@2X.png");
+
+  .container {
+    .row {
+      .col-md-6 {
+        .was-validated {
+          .card {
+            color: #363636;
+            border: none;
+            -webkit-box-shadow: 0 0 3px lightgray;
+            box-shadow: 0 0 3px lightgray;
+
+            label {
+              margin: 0;
+              font: {
+                size: 14px;
+                weight: 700;
+              };
+            }
+
+            input[type=text], input[type=password] {
+              height: 50px;
+              background-image: none;
+              border: {
+                color: #A94442;
+                radius: 10px;
+              }
+              font-size: 20px;
+            }
+
+            .form-control:valid {
+              border-color: $color-blue;
+              -webkit-box-shadow: 0 0 3px $color-blue;
+              box-shadow: 0 0 3px $color-blue;
+            }
+
+            .form-control:invalid {
+              border-color: #A94442;
+              -webkit-box-shadow: 0 0 3px #A94442;
+              box-shadow: 0 0 3px #A94442;
+            }
+
+            .invalid-feedback {
+              color: #A94442;
+              font-size: 14px;
+              margin-top: 0;
+              text-align: right;
+            }
+
+            .form {
+              padding: 10px;
+              width: 100%;
+              -webkit-box-shadow: 0 0 3px #A94442;
+              box-shadow: 0 0 3px #A94442;
+              outline: none;
+              background-clip: padding-box;
+              border: {
+                style: solid;
+                width: 1px;
+                color: #A94442;
+              };
+            }
+
+            &:first-child {
+              .card-body {
+                padding: 40px 25px 20px;
+
+                h4 {
+                  text-align: center;
+                }
+
+                .form-group:nth-child(4) {
+                  input {
+                    -webkit-border-radius: 0 10px 10px 0 !important;
+                    border-radius: 0 10px 10px 0 !important;
+                  }
+                }
+
+                .input-group-text {
+                  font-size: 20px;
+                  color: #A94442;
+                  border: {
+                    color: #A94442;
+                    radius: 10px 0 0 10px;
+                  };
+                  -webkit-box-shadow: 0 0 3px #A94442;
+                  box-shadow: 0 0 3px #A94442;
+                  background-color: rgba(169, 68, 66, 0.2);
+                }
+              }
+            }
+
+            &:last-child {
+              .card-body {
+                padding: 20px 25px;
+
+                label {
+                  margin-left: 10px;
+                }
+
+                button {
+                  background: $color-blue;
+                  border: none;
+                  -webkit-box-shadow: none;
+                  box-shadow: none;
+                  font-size: 20px;
+                  display: block;
+                  margin: 20px auto 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.results {
+  background: url("http://static.abt.uz/assets/4442aece/img/furley_bg_@2X.png");
+  -webkit-box-shadow: 0 0 20px lightgray inset;
+  box-shadow: 0 0 20px lightgray inset;
+
+  .container {
+    .row {
+      .col-md-12 {
+        .card {
+          border: none;
+          -webkit-box-shadow: 0 0 3px lightgray;
+          box-shadow: 0 0 3px lightgray;
+
+          .card-body {
+            padding: 40px 0 0;
+
+            h4:first-child {
+              text-align: center;
+              margin-bottom: 5px;
+            }
+
+            > p {
+              text-align: center;
+              font-size: 18px;
+              margin-top: 0;
+            }
+
+            hr {
+              width: 95%;
+            }
+
+            table {
+              thead {
+                tr {
+                  &:hover {
+                    a {
+                      color: $color-blue;
+
+                      .icon {
+                        background-color: $color-blue;
+                      }
+                    }
+                  }
+
+                  th {
+                    border-top: none;
+                    text-align: center;
+
+                    a {
+                      color: #119A8D;
+                      font: {
+                        size: 12px;
+                        weight: 700;
+                      };
+
+                      .icon {
+                        width: 7px;
+                        height: 23px;
+                        float: right;
+                      }
+                    }
+                  }
+                }
+              }
+
+              tbody {
+                tr {
+                  td {
+                    padding: 5px;
+
+                    &:nth-child(n+2) {
+                      text-align: center;
+                      vertical-align: middle;
+                    }
+
+                    &:nth-child(2) {
+                      p {
+                        color: $color-blue !important;
+                        font-weight: 700 !important;
+                      }
+                    }
+
+                    p:first-child {
+                      font-weight: 700;
+                      margin: 0;
+                    }
+
+                    p:last-child {
+                      font-weight: 400;
+                      color: #616161;
+                      margin: 0;
+                    }
+                  }
+
+                  &:nth-child(2n-1) {
+                    background-color: #F9F9F9;
+                  }
+
+                  &:nth-child(n+1):hover {
+                    background-color: $color-blue;
+
+                    * {
+                      color: #fff !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .pagination {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+
+    .page-link {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      border: {
+        radius: 50% !important;
+        color: #dddddd;
+      }
+      -webkit-box-shadow: 0 0 3px lightgray;
+      box-shadow: 0 0 3px lightgray;
+      margin: 0 2px;
+      width: 60px;
+      height: 60px;
+      font-size: 20px;
+      color: #808080;
+
+      .icon {
+        background: #808080;
+        width: 10px;
+      }
+
+      &:hover {
+        background: #363636;
+        color: #fff;
+        border-color: #363636;
+
+        .icon {
+          background: #fff;
+        }
+      }
+
+      &:focus {
+        background: $color-blue;
+        border-color: $color-blue;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        color: #fff;
+
+        .icon {
+          background: #fff;
+        }
+      }
+    }
+  }
+}
+
+.qabul {
+  background: url("http://static.abt.uz/assets/4442aece/img/furley_bg_@2X.png");
+  -webkit-box-shadow: 0 0 20px lightgray inset;
+  box-shadow: 0 0 20px lightgray inset;
+  padding: 40px 0;
+
+  .container {
+    .row {
+      .col-md-12 {
+        .card {
+          border: none;
+          -webkit-box-shadow: 0 0 3px lightgray;
+          box-shadow: 0 0 3px lightgray;
+
+          .card-body {
+            padding: 40px 0 0;
+
+            h4:first-child {
+              text-align: center;
+              margin-bottom: 5px;
+            }
+
+            hr {
+              width: 95%;
+            }
+
+            > p {
+              padding: 0 26px;
+              text-align: justify;
+              color: #606060;
+            }
+
+            ul {
+              margin-left: 20px;
+              color: #606060;
+            }
+
+            table {
+              thead {
+                tr {
+                  &:hover {
+                    a {
+                      color: $color-blue;
+
+                      .icon {
+                        background-color: $color-blue;
+                      }
+                    }
+                  }
+
+                  th {
+                    border: none !important;
+                    text-align: center;
+
+                    a {
+                      color: #119A8D;
+                      font: {
+                        size: 12px;
+                        weight: 700;
+                      };
+
+                      .icon {
+                        width: 7px;
+                        height: 23px;
+                        float: right;
+                      }
+                    }
+                  }
+                }
+              }
+
+              tbody {
+                tr {
+                  td {
+                    padding: 5px;
+
+                    p {
+                      margin: 0;
+                    }
+
+                    &:first-child {
+                      p:first-child {
+                        color: $color-blue;
+                        font-weight: 700;
+                      }
+
+                      p:last-child {
+                        color: #606060;
+                      }
+                    }
+
+                    &:nth-child(n+2) {
+                      text-align: center;
+                      vertical-align: middle;
+
+                      p {
+                        font-weight: 700;
+                      }
+                    }
+                  }
+
+                  &:nth-child(n+1):hover {
+                    background-color: $color-blue;
+
+                    * {
+                      color: #fff !important;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.news {
+  background: url("http://static.abt.uz/assets/4442aece/img/furley_bg_@2X.png");
+  -webkit-box-shadow: 0 0 20px lightgray inset;
+  box-shadow: 0 0 20px lightgray inset;
+  padding: 35px 0 60px;
+
+  .container {
+    .row {
+      .col-md-8 {
+        .card {
+          border: none;
+          -webkit-box-shadow: 0 0 3px lightgray;
+          box-shadow: 0 0 3px lightgray;
+
+          .card-body {
+            padding: 40px 25px 0;
+
+            div {
+              h4 {
+                a {
+                  color: #363636;
+                }
+              }
+
+              div:nth-child(2) {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: justify;
+                -webkit-justify-content: space-between;
+                justify-content: space-between;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+                margin: 15px 0;
+
+                .icon {
+                  width: 14px;
+                  background-color: #9c9c9c;
+                }
+
+                color: #9c9c9c;
+                font: {
+                  size: 14px;
+                  weight: 700;
+                };
+
+                .blacklink {
+                  background-color: #777777;
+                  color: #fff;
+                  padding: 1px 5px;
+                }
+              }
+
+              p:nth-child(3) {
+                text-align: justify;
+                color: #363636;
+              }
+              button {
+                background-color: $color-blue;
+                border: none;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                font-size: 20px;
+                padding: 10px 20px;
+                display: block;
+                margin-left: auto;
+              }
+            }
+
+            .pagination {
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              justify-content: center;
+              margin: 40px 0;
+              .page-link {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+                border: {
+                  radius: 50% !important;
+                  color: #dddddd;
+                }
+                -webkit-box-shadow: 0 0 3px lightgray;
+                box-shadow: 0 0 3px lightgray;
+                margin: 0 2px;
+                width: 60px;
+                height: 60px;
+                font-size: 20px;
+                color: #808080;
+
+                .icon {
+                  background: #808080;
+                  width: 10px;
+                }
+
+                &:hover {
+                  background: #363636;
+                  color: #fff;
+                  border-color: #363636;
+
+                  .icon {
+                    background: #fff;
+                  }
+                }
+
+                &:focus {
+                  background: $color-blue;
+                  border-color: $color-blue;
+                  -webkit-box-shadow: none;
+                  box-shadow: none;
+                  color: #fff;
+
+                  .icon {
+                    background: #fff;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .col-md-4 {
+        .card {
+          border: none;
+          -webkit-box-shadow: 0 0 3px lightgray;
+          box-shadow: 0 0 3px lightgray;
+          &:first-child {
+            height: 45px;
+          }
+          &:last-child {
+            position: -webkit-sticky;
+            position: sticky;
+            top: -480px;
+            margin-top: 20px;
+            .card-body {
+              padding: 40px 25px 25px;
+              .btn {
+                background-color: #777777;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                padding: 0 8px;
+                margin: 0 10px 5px 0;
+                color: #fff;
+                font: {
+                  size: 14px;
+                  weight: 700;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
