@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Collapse, Navbar, NavbarToggler, Nav, NavItem} from 'reactstrap';
 import {Container, Row} from "reactstrap/es";
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 export default(props) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,29 +16,32 @@ export default(props) => {
                         <Link to="/" className="nav-link pl-0"><img src="images/logo.png" alt="Here is logo"/></Link>
                 <NavbarToggler onClick={toggle}/>
                 <Collapse isOpen={isOpen} navbar>
-                    <Nav className="ml-auto" navbar>
-                        <NavItem>
-                            <Link to="/tests" className="nav-link active">Testlar</Link>
-                        </NavItem>
-                        <NavItem>
-                            <Link to="/results" className="nav-link">Natijalar</Link>
-                        </NavItem>
-                        <NavItem>
-                            <Link to="/universities" className="nav-link">Oliygohlar</Link>
-                        </NavItem>
-                        <NavItem>
-                            <Link to="/qabul2019" className="nav-link">Qabul 2019</Link>
-                        </NavItem>
-                        <NavItem>
-                            <Link to="/sirtqi" className="nav-link">Sirtqi 2019</Link>
-                        </NavItem>
-                        <NavItem>
-                            <Link to="/news" className="nav-link">Yangiliklar</Link>
-                        </NavItem>
-                        <NavItem>
-                            <Link to="/login" className="nav-link">Kirish <i className="icon icon-log-in icon-black"></i></Link>
-                        </NavItem>
-                    </Nav>
+                    <ul className="page-nav__ul">
+                        <li className="page-nav__li">
+                            <NavLink className="page-nav__link" exact activeClassName="page-nav__link_active"
+                                     to="/tests">Testlar</NavLink>
+                        </li>
+                        <li className="page-nav__li">
+                            <NavLink className="page-nav__link" exact activeClassName="page-nav__link_active"
+                                     to="/results">Natijalar</NavLink>
+                        </li>
+                        <li className="page-nav__li">
+                            <NavLink className="page-nav__link" exact activeClassName="page-nav__link_active"
+                                     to="/universities">Oliygohlar</NavLink>
+                        </li>
+                        <li className="page-nav__li">
+                            <NavLink className="page-nav__link" exact activeClassName="page-nav__link_active"
+                                     to="/qabul2019">Qabul 2019</NavLink>
+                        </li>
+                        <li className="page-nav__li">
+                            <NavLink className="page-nav__link" exact activeClassName="page-nav__link_active"
+                                     to="/news">Yangiliklar</NavLink>
+                        </li>
+                        <li className="page-nav__li">
+                            <NavLink className="page-nav__link" exact activeClassName="page-nav__link_active"
+                                     to="/login">Kirsh <i className="icon icon-log-in icon-black"></i></NavLink>
+                        </li>
+                    </ul>
                 </Collapse>
             </Navbar>
                 </Row>

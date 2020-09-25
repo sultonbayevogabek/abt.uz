@@ -1,6 +1,6 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
-
-/******************************************* - main colors for our project - *******************************************/
+/*===========================================*\
+         main colors for our project
+\*===========================================*/
 $color-red: #FF8F5E;
 $color-blue: #15D1C2;
 $color-dark-blue: #2196F3;
@@ -8,7 +8,9 @@ $color-black: #252525;
 $color-yellow: #FFCA2B;
 $color-light-green: #8BC34A;
 $color-muted: #C9C9C9;
-/******************************************* - add .svg icons to project - *********************************************/
+/*===========================================*\
+         add svg icons to project
+\*===========================================*/
 @mixin mask($adress) {
   mask-image: url($adress);
   -webkit-mask-image: url($adress);
@@ -106,8 +108,9 @@ $color-muted: #C9C9C9;
   &.icon-clock {
     @include mask("/icon/clock.svg")
   }
-
-  /********************************************** - colors for icons - *************************************************/
+  /*===========================================*\
+               colors for icons
+  \*===========================================*/
   &.icon-black {
     background: #000000;
   }
@@ -125,7 +128,9 @@ $color-muted: #C9C9C9;
   }
 }
 
-/***************************************** - start css styles for project - ********************************************/
+/*===========================================*\
+            styles project
+\*===========================================*/
 * {
   font-family: sfui-bold, Arial, Helvetica, sans-serif;
 }
@@ -133,33 +138,31 @@ $color-muted: #C9C9C9;
 .navbar {
   padding: 10px 15px;
 
-  .collapse {
-    .navbar-nav {
-      .nav-item {
-        margin-right: 8px;
-
-        &:last-child {
-          margin-right: 0;
-        }
-
-        .nav-link {
-          color: #000;
-          font-weight: 400;
-          font-size: 18px;
-          padding: 10px 15px !important;
-
-          &:hover, &:focus {
-            background-color: $color-blue;
-            color: #fff;
-            -webkit-border-radius: 5px;
-            border-radius: 5px;
-
-            .icon {
-              background-color: #fff;
-            }
-          }
-        }
-      }
+  .page-nav__ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 0 0 auto;
+    padding: 0;
+    list-style-type: none;
+  }
+  .page-nav__li:not(:last-child) {
+    margin-right: 5px;
+  }
+  .page-nav__link {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #363636;
+  }
+  .page-nav__link:hover, .page-nav__link_active {
+    background-color: $color-blue;
+    color: #ffffff;
+    .icon-log-in {
+      background-color: white;
     }
   }
 }

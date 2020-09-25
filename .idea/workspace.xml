@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1ad1cfd5-7f69-40e5-8cc6-1c3d97dc7e50" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/abt_uz_react.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavigationBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavigationBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1YRRG7TGfA9Ayg9TG9dfq35jcQR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../C1-GROUP/react-project" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PDP Web\abt_uz_react\src\components" />
+      <recent name="D:\PDP Web\abt_uz_react\src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PDP Web\abt_uz_react\public" />
+      <recent name="D:\PDP Web\abt_uz_react\public\icon" />
+      <recent name="D:\PDP Web\abt_uz_react\src" />
+      <recent name="D:\PDP Web\abt_uz_react\src\components" />
+      <recent name="D:\PDP Web\abt_uz_react\public\images" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1ad1cfd5-7f69-40e5-8cc6-1c3d97dc7e50" name="Default Changelist" comment="" />
+      <created>1582903322356</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582903322356</updated>
+      <workItem from="1582903328298" duration="12215000" />
+      <workItem from="1582954045230" duration="1264000" />
+      <workItem from="1582984188262" duration="4340000" />
+      <workItem from="1583050273981" duration="599000" />
+      <workItem from="1583090037757" duration="1935000" />
+      <workItem from="1583135670712" duration="732000" />
+      <workItem from="1583147912854" duration="6099000" />
+      <workItem from="1583155118948" duration="13442000" />
+      <workItem from="1583205040641" duration="3752000" />
+      <workItem from="1583245251818" duration="4220000" />
+      <workItem from="1583256094406" duration="609000" />
+      <workItem from="1583298644699" duration="2293000" />
+      <workItem from="1583309434827" duration="927000" />
+      <workItem from="1583332122102" duration="14716000" />
+      <workItem from="1583350923096" duration="1011000" />
+      <workItem from="1583377882449" duration="1013000" />
+      <workItem from="1583421626672" duration="943000" />
+      <workItem from="1583428611015" duration="864000" />
+      <workItem from="1583433140553" duration="2616000" />
+      <workItem from="1583501350395" duration="1556000" />
+      <workItem from="1583752268967" duration="622000" />
+      <workItem from="1583770159199" duration="61000" />
+      <workItem from="1583771737400" duration="530000" />
+      <workItem from="1583809775061" duration="698000" />
+      <workItem from="1583810578921" duration="861000" />
+      <workItem from="1583811644898" duration="595000" />
+      <workItem from="1575185958664" duration="615000" />
+      <workItem from="1583870228695" duration="159000" />
+      <workItem from="1583870933912" duration="10000" />
+      <workItem from="1583870970715" duration="345000" />
+      <workItem from="1583871957980" duration="213000" />
+      <workItem from="1583872213557" duration="42000" />
+      <workItem from="1583914242716" duration="4105000" />
+      <workItem from="1583925993185" duration="3551000" />
+      <workItem from="1583956593757" duration="1676000" />
+      <workItem from="1575176315171" duration="5000" />
+      <workItem from="1584530226000" duration="3825000" />
+      <workItem from="1584678938632" duration="10940000" />
+      <workItem from="1575192153349" duration="6046000" />
+      <workItem from="1584777478666" duration="3117000" />
+      <workItem from="1584791198208" duration="13065000" />
+      <workItem from="1584855810479" duration="37905000" />
+      <workItem from="1584950484270" duration="467000" />
+      <workItem from="1584983669511" duration="492000" />
+      <workItem from="1584987098164" duration="4858000" />
+      <workItem from="1585029566514" duration="107000" />
+      <workItem from="1585141769207" duration="7702000" />
+      <workItem from="1585198759239" duration="242000" />
+      <workItem from="1585222465301" duration="8220000" />
+      <workItem from="1585305379265" duration="18629000" />
+      <workItem from="1585376092720" duration="376000" />
+      <workItem from="1585395476414" duration="12421000" />
+      <workItem from="1585458246503" duration="106000" />
+      <workItem from="1585485615938" duration="13022000" />
+      <workItem from="1585547952948" duration="10163000" />
+      <workItem from="1585636727639" duration="3551000" />
+      <workItem from="1585671185759" duration="5089000" />
+      <workItem from="1585724164107" duration="5703000" />
+      <workItem from="1585810655432" duration="51000" />
+      <workItem from="1585828567127" duration="477000" />
+      <workItem from="1585987168296" duration="891000" />
+      <workItem from="1585989069662" duration="203000" />
+      <workItem from="1585990052304" duration="297000" />
+      <workItem from="1585990707154" duration="552000" />
+      <workItem from="1585991449738" duration="420000" />
+      <workItem from="1585991935297" duration="1852000" />
+      <workItem from="1585994650274" duration="12000" />
+      <workItem from="1585996621328" duration="779000" />
+      <workItem from="1586244376089" duration="180000" />
+      <workItem from="1586371251684" duration="278000" />
+      <workItem from="1586428053461" duration="530000" />
+      <workItem from="1586447639957" duration="1078000" />
+      <workItem from="1587750540602" duration="573000" />
+      <workItem from="1589473140300" duration="89000" />
+      <workItem from="1589475895595" duration="185000" />
+      <workItem from="1589480543846" duration="698000" />
+      <workItem from="1589517545040" duration="621000" />
+      <workItem from="1590911757816" duration="102000" />
+      <workItem from="1597731676516" duration="802000" />
+      <workItem from="1597734481597" duration="2479000" />
+      <workItem from="1597760659936" duration="2000" />
+      <workItem from="1597765375862" duration="218000" />
+      <workItem from="1598351735009" duration="1238000" />
+      <workItem from="1598703116000" duration="527000" />
+      <workItem from="1600944809654" duration="3150000" />
+      <workItem from="1601017588489" duration="2952000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1601018508337">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1601018508337" />
+    <state x="184" y="8" key="SettingsEditor" timestamp="1601023673333">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1601023673333" />
+  </component>
+</project>
